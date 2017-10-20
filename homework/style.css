@@ -1,0 +1,88 @@
+.header-fon {
+    font-family: Montserrat;
+    background-color: #2b2b2b;
+    height: 34px;
+    width: auto;
+}
+.header-fon div {
+    position: relative;
+    margin: auto;
+    width: 1170px;
+    height: 34px;
+
+}
+.header-fon p {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #7f7f7f;
+    }
+.register {
+    font-size: 12px;
+    color: #3b3b3b;
+    position: absolute;
+    right: 0;
+}
+
+.register span {
+    font-size: 12px;
+    color: #3b3b3b;
+}
+nav {
+    font-family: Montserrat;
+    background-color:  #232323;
+    }
+nav div {
+    position: relative;
+    margin: auto;
+    width: 1170px;
+    height: 168px;
+    background-color: #232323;
+
+}
+nav p {
+    display: inline-block;
+
+    }
+.logo {
+    margin: 31px 0 0;
+}
+.ramka {
+    position: absolute;
+    right: 0;
+    margin: 32px 0 0 0;
+    height: 46px;
+    width: 275px;
+    border: 1px solid #3b3b3b;
+    text-align: left;
+    padding: 10px  -10px;
+    }
+.logo-SR {
+    position: absolute;
+    right: 17px;
+    top: 33px;
+    margin: 14.5px 0;
+}
+.serch-products {
+    position: absolute;
+    right: 133px;
+    top: 33px;
+    margin: 16.14px 0;
+    font-size: 13px;
+    color: #666666;
+}
+
+li {
+    display: inline-block;
+    font-size: 16px;
+    color: #efefef;
+    margin: 0 47px 0 0;
+}
+ul {
+    margin:  21.73px -40px;
+}
+.circle {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
