@@ -1,0 +1,34 @@
+div {
+    background-color: #555555;
+}
+li {
+    position: relative;
+    padding: 10px 10px 10px 60px;
+    width: 860px;
+    margin: 0 auto;
+}
+li:nth-child(2n-1) {
+    background-color: #cccccc;
+}
+li:nth-child(2n-2) {
+    background-color: #ffffff;
+}
+ol {
+    list-style: none;
+    counter-reset: num;
+}
+li::before {
+    content: counter(num);
+    counter-increment: num;
+    display: block;
+    background-color: gray;
+    position: absolute;
+    width: 50px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: #ffffff;
+    text-align: center;
+
+}
+
