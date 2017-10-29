@@ -6,13 +6,12 @@ li {
     padding: 10px 10px 10px 60px;
     width: 860px;
     margin: 0 auto;
+    background-color: #ffffff;
 }
 li:nth-child(2n-1) {
     background-color: #cccccc;
 }
-li:nth-child(2n-2) {
-    background-color: #ffffff;
-}
+
 ol {
     list-style: none;
     counter-reset: num;
@@ -21,7 +20,7 @@ li::before {
     content: counter(num);
     counter-increment: num;
     display: block;
-    background-color: gray;
+    background-color: #ff5353;
     position: absolute;
     width: 50px;
     top: 0;
@@ -29,6 +28,7 @@ li::before {
     bottom: 0;
     color: #ffffff;
     text-align: center;
-
 }
-
+li:nth-child(2n-1)::before {
+    background-color: #cc4242;
+}
