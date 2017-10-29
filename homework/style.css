@@ -1,21 +1,26 @@
-.header-fon {
-
+.wrapper {
     background-color: #2b2b2b;
     width: auto;
 }
-.header-fon div {
+.header-top ` {
     font-family: Montserrat;
     margin: auto;
     width: 1170px;
-    height: 34px;
+
+}
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: '';
 
 }
 
 .header-tel {
+    display: inline-block;
     font-size: 14px;
     color: #7f7f7f;
     text-decoration: none;
-        }
+    }
 .header-user a {
     font-size: 14px;
     color: #7f7f7f;
@@ -23,17 +28,21 @@
 }
 
 .header-user span {
+    font-size: 12px;
     margin: 0 10px;
     color: #3b3b3b;
 }
 .header-user {
-    background-color: yellow;
     float: right;
 }
+.header-tel, .header-user {
+     padding: 10px;
 nav {
     font-family: Montserrat;
     background-color:  #232323;
     }
+
+}
 nav div {
     position: relative;
     margin: auto;
