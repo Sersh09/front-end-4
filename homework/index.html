@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   </head>
@@ -14,9 +15,13 @@
     <header class="header">
       <div class="header-top">
         <div class="container clearfix">
-          <a href="tel:+123456789" class="header-tel">(+123) 456 789</a>
-          <div class="header-user">
-            <a href="#">Log in</a> <span>or</span><a href="#">Register</a>
+          <div class="row">
+            <div class="col-xs-12 colsm-6">
+              <a href="tel:+123456789" class="header-tel">(+123) 456 789</a>
+            </div>
+            <div class="header-user col-xs-12 colsm-6">
+              <a href="#">Log in</a> <span>or</span><a href="#">Register</a>
+            </div>
           </div>
         </div>
       </div>
@@ -45,6 +50,56 @@
          </div>
        </div>
     </header>
+  <table class="table table-striped" >
+    <thead>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    </thead>
+    <body>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    </body>
+    <thead>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    </thead>
+    <body>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    </body>
+    <!-- Standard button -->
+    <button type="button" class="btn btn-default">Default</button>
+
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+    <button type="button" class="btn btn-primary">Primary</button>
+
+    <!-- Indicates a successful or positive action -->
+    <button type="button" class="btn btn-success">Success</button>
+
+    <!-- Contextual button for informational alert messages -->
+    <button type="button" class="btn btn-info">Info</button>
+
+    <!-- Indicates caution should be taken with this action -->
+    <button type="button" class="btn btn-warning">Warning</button>
+
+    <!-- Indicates a dangerous or potentially negative action -->
+    <button type="button" class="btn btn-danger">Danger</button>
+
+    <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+    <button type="button" class="btn btn-link">Link</button>
+  </table>
   </div>
 </body>
 </html>
