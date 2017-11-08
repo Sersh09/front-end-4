@@ -1,5 +1,6 @@
-div {
-    background-color: #555555;
+.wrapper {
+    background-color: #555;
+    padding: 1px;
 }
 li {
     position: relative;
@@ -15,11 +16,16 @@ li:nth-child(2n-1) {
 ol {
     list-style: none;
     counter-reset: num;
+    padding: 0;
 }
+
 li::before {
+    line-height: 100px;
     content: counter(num);
     counter-increment: num;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ff5353;
     position: absolute;
     width: 50px;
@@ -27,7 +33,6 @@ li::before {
     left: 0;
     bottom: 0;
     color: #ffffff;
-    text-align: center;
 }
 li:nth-child(2n-1)::before {
     background-color: #cc4242;
