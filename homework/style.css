@@ -54,18 +54,14 @@ button {
     display: inline-block;
    border: 1px solid #323232;
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .header-middle form {
-        position: relative;
-        margin-top: 20px;
-        width: 100%;
-        display: block;
-        float: none;
+        float: left;
     }
 }
 .header-middle,
 .header-logo form {
-    margin: 30px 0 26px;
+    margin: 30px -15px 26px;
 }
 .header-logo {
     display: inline-block;
@@ -77,11 +73,6 @@ button {
     color: #666;
     border: none;
     background-color: transparent;
-}
-@media (max-width: 500px) {
-    .header-search {
-        width: 87%;
-    }
 }
 .header-search,
 .header-search::placeholder {
@@ -97,17 +88,15 @@ button {
     border: none;
     background: transparent url(logo/Search.png) center center no-repeat;
 }
-@media (max-width: 500px) {
-    .header-middle button {
-        position: absolute;
-        right: 0;
-    }
-}
 .header-search,
 .header-middle button {
     display: inline-block;
     vertical-align: top;
-
+}
+@media (max-width: 767px) {
+    .header-middle form {
+        margin: 20px 0;
+    }
 }
 .header-nav {
     padding-bottom: 20px;
@@ -115,38 +104,22 @@ button {
 .header-nav ul {
     list-style: none;
     padding: 0;
-    margin-left: -20px;
+    margin-left: -15px;
 }
 .header-nav li {
     display: inline-block;
 }
-@media (max-width: 600px) {
-    .header-nav li {
-        display: block;
-        margin-top: 10px;
-    }
-    .active {
-        margin: 10px;
-}
+
 .header-nav li+li {
-    margin-left: 10px;
-}
+    margin-left: 0px;
 }
 .header-nav a {
-    padding: 10px 20px;
+    padding: 10px 0px;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
     color: #fff;
     text-decoration: none;
-}
-@media (max-width: 700px) {
-    .active {
-        margin-left: 10px;
-    }
-    .header-nav a {
-        padding: 10px 10px;
-    }
 }
 .header-nav .active,
 .header-nav a:hover {
@@ -159,19 +132,15 @@ button {
     height: 22px;
     background: url(logo/circl.png) center center no-repeat;
 }
-@media (max-width: 600px) {
-    .header-botton {
-        position: relative;
-    }
+@media (max-width: 767px) {
     .header-cart {
-        position: absolute;
-        bottom: 30px;
-        right: 0;
+        display: none;
     }
+
 }
 .header-cart::after {
     position: relative;
-    top: -6px;
+    top: -15px;
     right: -6px;
     display: inline-block;
     border-radius: 100%;
