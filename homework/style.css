@@ -1,8 +1,8 @@
-html {
-    font-family: Montserrat;
+
 }
 body {
     min-width: 320px;
+    font-family: Montserrat;
 }
 imput,
 button {
@@ -69,14 +69,14 @@ button {
 
 .header-search {
     width: 200px;
-    padding: 7px 4px 7px 20px;
+    padding: 12px 4px 12px 20px;
     color: #666;
     border: none;
     background-color: transparent;
 }
 .header-search,
 .header-search::placeholder {
-    font-size: 0.8125rem;
+    font-size: 13px;
     color: #666;
     line-height: 1.85rem;
     font-weight: 200;
@@ -101,6 +101,9 @@ button {
 .header-nav {
     padding-bottom: 20px;
 }
+.header-nav div {
+    float: right;
+}
 .header-nav ul {
     list-style: none;
     padding: 0;
@@ -108,14 +111,14 @@ button {
 }
 .header-nav li {
     display: inline-block;
-}
+    }
 
 .header-nav li+li {
     margin-left: 0px;
 }
 .header-nav a {
     padding: 10px 0px;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.5rem;
     font-weight: 400;
     color: #fff;
