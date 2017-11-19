@@ -1,5 +1,5 @@
 html {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 body {
     min-width: 320px;
@@ -17,28 +17,24 @@ button {
 }
 .container-top {
     display: flex;
-
 }
-
+@media (max-width: 510px){
+    .container-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .container-top, .container {
     margin: auto;
     padding: 0 15px;
     max-width: 1170px;
 }
-
-/*.clearfix:after {
-    display: table;
-    clear: both;
-    content: '';
-}
-*/
 .header-tel {
     flex-grow: 1;
     font-size: 14px;
     color: #7f7f7f;
     text-decoration: none;
 }
-
 .header-user a {
     font-size: 14px;
     color: #7f7f7f;
@@ -53,24 +49,28 @@ button {
     color: #3b3b3b;
 }
 .header-user {
-    /*float: right;*/
 }
 .header-middle {
     display: flex;
+
 }
-@media (max-width: 510px) {
+@media (max-width: 510px){
     .header-middle {
         flex-direction: column;
+        align-items: center;
     }
 }
-.header-logo {
-    flex-grow: 1;
+.header-middle a {
+    display: block;
 }
-
+.header-logo {
+        flex-grow: 1;
+    }
 .header-middle form {
     /* float: right; */
     display: inline-block;
     border: 1px solid #323232;
+    height: 46px;
 }
 @media (max-width: 510px) {
     .header-middle form {
@@ -226,20 +226,32 @@ button {
 @media (max-width: 510px) {
     .contacte {
         flex-direction: column;
+        justify-content: space-around;
     }
 }
 .contact-us {
+    display: flex;
+    align-items: center;
     flex-grow: 1;
+
 }
 .contact-us a {
-    padding: 30px;
+    padding:  0 30px 0 30px;
     font-size: 30px;
     color: #232323;
     text-decoration: none;
 }
-.home-address {
-    padding: 15px;
+@media (max-width: 510px)  {
+    .contact-us {
+        flex-grow: inherit;
+    }
+
+
 }
+.home-address {
+    padding: 0 15px 0 15px;
+}
+
 .home-address a {
     text-decoration: none;
     font-size: 14px;
