@@ -1,8 +1,8 @@
-
+.wrapper {
+    font-family: Montserrat, sans-serif;
 }
 body {
     min-width: 320px;
-    font-family: Montserrat;
 }
 imput,
 button {
@@ -21,19 +21,23 @@ button {
     max-width: 1170px;
 }
 
-.clearfix:after {
-    display: table;
-    clear: both;
-    content: '';
+/*---------------- tel------user----------- */
+.header-tel {
+    text-align: left;
 }
 
-.header-tel {
+.header-tel a {
     display: inline-block;
     font-size: 14px;
     color: #7f7f7f;
     text-decoration: none;
     }
-.header-user a {
+@media (max-width: 767px) {
+    .header-tel {
+        text-align: center;
+    }
+}
+a {
     font-size: 14px;
     color: #7f7f7f;
     text-decoration: none;
@@ -48,28 +52,43 @@ button {
 }
 .header-user {
     float: right;
-}
-.header-middle form {
-    float: right;
-    display: inline-block;
-   border: 1px solid #323232;
+    text-align: right;
 }
 @media (max-width: 767px) {
-    .header-middle form {
-        float: left;
+    .header-user {
+        text-align: center;
     }
 }
-.header-middle,
-.header-logo form {
-    margin: 30px -15px 26px;
+/*_______________tel________user_________________*/
+
+/*__________logo_______Search Products____________ */
+.header-middle form {
+    display: inline-block;
+    border: 1px solid #323232;
 }
-.header-logo {
+@media (min-width: 767px) {
+    .header-middle form {
+       float: right;
+    }
+}
+.header-logo,
+.header-middle form {
+    margin: 30px 0 26px;
+}
+.header-logo a {
     display: inline-block;
 }
-
+@media (max-width: 767px) {
+    .header-logo {
+        text-align: center;
+    }
+    .header-middle form {
+        margin-top: 10px;
+    }
+}
 .header-search {
     width: 200px;
-    padding: 12px 4px 12px 20px;
+    padding: 13px 4px 13px 20px;
     color: #666;
     border: none;
     background-color: transparent;
@@ -84,7 +103,7 @@ button {
 .header-middle button {
     padding: 0;
     width: 54px;
-    height: 44px;
+    height: 45px;
     border: none;
     background: transparent url(logo/Search.png) center center no-repeat;
 }
@@ -93,36 +112,51 @@ button {
     display: inline-block;
     vertical-align: top;
 }
-@media (max-width: 767px) {
-    .header-middle form {
-        margin: 20px 0;
+@media (max-width: 767px){
+    .search-blok {
+        display: flex;
+        justify-content: center;
     }
 }
+/*__________logo_______Search Products____________ */
 .header-nav {
     padding-bottom: 20px;
-}
-.header-nav div {
-    float: right;
 }
 .header-nav ul {
     list-style: none;
     padding: 0;
-    margin-left: -15px;
+    margin-left: -20px;
 }
 .header-nav li {
     display: inline-block;
+}
+@media (max-width: 600px) {
+    .header-nav li {
+        display: block;
+        margin-top: 10px;
     }
-
-.header-nav li+li {
-    margin-left: 0px;
+    .active {
+        margin: 10px;
+    }
+    .header-nav li+li {
+        margin-left: 10px;
+    }
 }
 .header-nav a {
-    padding: 10px 0px;
+    padding: 10px 20px;
     font-size: 16px;
     line-height: 1.5rem;
     font-weight: 400;
     color: #fff;
     text-decoration: none;
+}
+@media (max-width: 700px) {
+    .active {
+        margin-left: 10px;
+    }
+    .header-nav a {
+        padding: 10px 10px;
+    }
 }
 .header-nav .active,
 .header-nav a:hover {
@@ -135,16 +169,20 @@ button {
     height: 22px;
     background: url(logo/circl.png) center center no-repeat;
 }
-@media (max-width: 767px) {
-    .header-cart {
-        display: none;
+@media (max-width: 600px) {
+    .header-botton {
+        position: relative;
     }
-
+    .header-cart {
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+    }
 }
 .header-cart::after {
     position: relative;
-    top: -15px;
-    right: -6px;
+    top: -18px;
+    right: 3px;
     display: inline-block;
     border-radius: 100%;
     width: 18px;
