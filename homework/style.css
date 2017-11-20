@@ -1,5 +1,5 @@
 html {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 body {
     min-width: 320px;
@@ -15,24 +15,20 @@ button {
 .header-top {
     background-color: #2b2b2b;
 }
-.container {
+.container-top {
+    display: flex;
+}
+.container-top, .container {
     margin: auto;
     padding: 0 15px;
     max-width: 1170px;
 }
-
-.clearfix:after {
-    display: table;
-    clear: both;
-    content: '';
-}
-
 .header-tel {
-    display: inline-block;
+    flex-grow: 1;
     font-size: 14px;
     color: #7f7f7f;
     text-decoration: none;
-    }
+}
 .header-user a {
     font-size: 14px;
     color: #7f7f7f;
@@ -47,23 +43,23 @@ button {
     color: #3b3b3b;
 }
 .header-user {
-    float: right;
+}
+.header-middle {
+    display: flex;
+
+}
+.header-middle a {
+    display: block;
+}
+.header-logo {
+    flex-grow: 1;
 }
 .header-middle form {
-    float: right;
+    /* float: right; */
     display: inline-block;
-   border: 1px solid #323232;
+    border: 1px solid #323232;
+    height: 46px;
 }
-@media (max-width: 500px) {
-    .header-middle form {
-        position: relative;
-        margin-top: 20px;
-        width: 100%;
-        display: block;
-        float: none;
-    }
-}
-
 .header-middle,
 .header-logo form {
     margin: 30px 0 26px;
@@ -74,15 +70,10 @@ button {
 
 .header-search {
     width: 200px;
-    padding: 10px 4px 10px 20px;
+    padding: 7px 4px 7px 20px;
     color: #666;
     border: none;
     background-color: transparent;
-}
-@media (max-width: 500px) {
-    .header-search {
-        width: 87%;
-    }
 }
 .header-search,
 .header-search::placeholder {
@@ -98,20 +89,17 @@ button {
     border: none;
     background: transparent url(logo/Search.png) center center no-repeat;
 }
-@media (max-width: 500px) {
-    .header-middle button {
-        position: absolute;
-        right: 0px;
-    }
-}
-
 .header-search,
 .header-middle button {
     display: inline-block;
     vertical-align: top;
 
 }
+.header-botton {
+    display: flex;
+}
 .header-nav {
+    flex-grow: 1;
     padding-bottom: 20px;
 }
 .header-nav ul {
@@ -122,18 +110,6 @@ button {
 .header-nav li {
     display: inline-block;
 }
-@media (max-width: 650px) {
-    .header-nav li {
-        display: block;
-        margin-top: 10px;
-    }
-    .active {
-        margin: 10px;
-}
-.header-nav li+li {
-    margin-left: 10px;
-}
-}
 .header-nav a {
     padding: 10px 20px;
     font-size: 1rem;
@@ -142,34 +118,16 @@ button {
     color: #fff;
     text-decoration: none;
 }
-@media (max-width: 750px) {
-    .active {
-        margin-left: 10px;
-    }
-    .header-nav a {
-        padding: 10px 10px;
-    }
-}
 .header-nav .active,
 .header-nav a:hover {
     color: #be9261;
 }
 .header-cart {
-    float: right;
+    /*float: right;*/
     padding: 10px;
     width: 17px;
     height: 22px;
     background: url(logo/circl.png) center center no-repeat;
-}
-@media (max-width: 650px) {
-    .header-botton {
-        position: relative;
-    }
-    .header-cart {
-        position: absolute;
-        bottom: 5px;
-        right: 5px;
-    }
 }
 .header-cart::after {
     position: relative;
@@ -187,4 +145,40 @@ button {
     content: '2';
     text-decoration: none;
     color: black;
+}
+.content-body {
+    display: block;
+    width: auto;
+}
+.contacte {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    max-width: 1170px;
+    height: 117px;
+    background-color: #e7e7e7;
+}
+.contact-us {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+}
+.contact-us a {
+    padding:  0 30px 0 30px;
+    font-size: 30px;
+    color: #232323;
+    text-decoration: none;
+}
+.home-address {
+    padding: 0 15px 0 15px;
+}
+
+.home-address a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #666666;
+}
+.home-address span {
+    color: #999999;
 }
